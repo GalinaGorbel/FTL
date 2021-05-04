@@ -4,23 +4,25 @@
     font-family: $base-font;
     color: $base-color;
     background-color: $bg-color;
-    font-size: 13px;
-    font-weight: 400;
     box-sizing: border-box;
-    vertical-align: baseline;
     margin: 0;
     padding: 0;
+}
+body {
     letter-spacing: 0.5px;
-    overflow-x: hidden;
+    font-size: 13px;
+    font-weight: 400;
+    //margin: auto;
 }
 
 h1 {
-    font-size: 6.4vw;
+    font-size: 8.6vw;
     margin-bottom: 23px;
     font-weight: 700;
 }
 .container {
     margin-top: 40px;
+    max-width: 728px;
 }
 
 @import './toggle';
@@ -34,4 +36,3 @@ h1 {
 @import './comment';
 @import './info';
 @import './text';
-/* @import './mixins'; */

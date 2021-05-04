@@ -17,8 +17,9 @@
 
 @media (min-width: 768px) {
     .container {
-        max-width: 728px;
+        //max-width: 728px;
         margin-left: 8.8%;
+        margin-right: 8.8%;
     }
     h1 {
         font-size: 56px;
@@ -36,7 +37,7 @@
 }
 @media (max-width: 576px) {
     .toggle__inner_small {
-        width: 100%;
+        min-width: 100%;
      }
     .select_hidden {
         display: none;
@@ -51,7 +52,7 @@
     .arrow_type {
         left: 89%
     }
-    * {
+    body {
         letter-spacing: 0.2px;
     }
 }

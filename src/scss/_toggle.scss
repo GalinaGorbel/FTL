@@ -1,8 +1,9 @@
 .toggle {
+    overflow: hidden;
     &__inner {
         position: relative;
         margin-bottom: 40px;
-        flex: 1;
+        //flex: 1;
 
         &_small {
             width: 53%;
@@ -11,6 +12,7 @@
         &_temp {
             margin-top: 16px;
             margin-bottom: 0px;
+            width: 100%;
         }
         &_time {
             margin-bottom: 16px;
