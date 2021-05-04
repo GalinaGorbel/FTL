@@ -109,6 +109,7 @@ label[for="temp"] {
     .input_route:last-child {
       margin-bottom: 0px; }
   .input_address {
+    margin-left: 8px;
     padding-right: 10px; }
   .input_white {
     background-color: #fff;
