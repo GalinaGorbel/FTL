@@ -1,0 +1,49 @@
+.timeContent {
+    &__inner {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 13px 10px 13px 12px;
+        height: 44px;
+        margin-bottom: 4px;
+        background-color: #4B4B4F;
+    }
+}
+.timeContent__input {
+    position: relative;
+    flex: 1 1 76%;
+    background-color: #4B4B4F;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(75, 75, 79, 0) 2%, rgb(75, 75, 79) 80%);
+    }
+}
+.timeContent__time {
+    width: 119px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #717174;
+    height: 24px;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #717174;
+            margin-top: 4px;
+            letter-spacing: 0.05em;
+            opacity: 0.3;
+            font-weight: normal;
+        }
+    &_checked {
+        a {
+            opacity: 1;
+        }
+    }    
+}
+

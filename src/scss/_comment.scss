@@ -1,0 +1,21 @@
+.comment {
+    &__inner {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 40px;
+    }
+    
+    &__title {
+        margin-bottom: 9px;
+    }
+    
+    &__text {
+        resize: none;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        color: #CFCFCF;
+        padding: 13px 14px 31px;
+        height: 80px;
+    }
+}

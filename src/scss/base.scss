@@ -1,0 +1,36 @@
+@import './variables';
+
+* {
+    font-family: $base-font;
+    color: $base-color;
+    background-color: $bg-color;
+    font-size: 13px;
+    font-weight: 400;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 6.4vw;
+    margin-bottom: 23px;
+    font-weight: 700;
+}
+.container {
+    margin-top: 40px;
+}
+
+@import './toggle';
+@import './input';
+@import './select';
+@import './arrow';
+@import './search';
+@import './media';
+@import './timeContent';
+@import './checkbox';
+@import './comment';
+@import './info';
+@import './text';
+/* @import './mixins'; */

@@ -1,0 +1,26 @@
+.input {
+    border: none;
+    outline: none;
+    height: 44px;
+    line-height: 19px;
+    &_big {
+        width: 100%;
+    }
+    &_route {
+        margin-bottom: 16px;
+        padding-left: 10px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    &_address {
+        padding-right: 10px;
+    }
+    &_white {
+        background-color: #fff;
+        color: black;
+    }
+    &_dark {
+        background-color: #4B4B4F;
+    }
+}    

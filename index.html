@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/font.css">
+    <link rel='stylesheet' href='./dist/style.css'>
+</head>
+<body>
+    <div class="container">
+        <h1>FTL: Прямая машина</h1>
+        <form action="URL" method="POST">
+        <!-- Блок 1 - Маршрут -->
+        <div class="toggle toggle__inner">
+            <input type="checkbox" class="toggle__checkbox" id="route" checked></input>
+            <label for="route" class="toggle__label"><span>1</span>Маршрут</label>
+            <div class="toggle__content">
+                <label for="from" class="toggle__content-label">Откуда</label>
+                <input type="text" class="input input_big input_route input_white" id="from" name="from">
+                <label for="to" class="toggle__content-label">Куда</label>
+                <input type="text" class="input input_big input_white" id="to" name="to">
+            </div>
+        </div>
+        <!-- Блок 2 - Транспорт -->
+        <div class="toggle toggle__inner toggle__inner_small">
+            <input type="checkbox" class="toggle__checkbox" id="transport" checked></input>
+            <label for="transport" class="toggle__label"><span>2</span>Транспорт</label>
+            <div class="toggle__content toggle__content_select">
+                <div class="select select__inner select__inner_type_mr">
+                    <p class="select__title">Грузоподъёмность</p>
+                        <ul>
+                            <li class="select__dropdown">
+                                <a href="#" data-toggle="dropdown"><span class="select__value" name="lifting">Не выбрана</span><i class="arrow"></i></a>
+                                <ul class="select__block select__block_hidden text">
+                                    <li class="select__option">Не выбрана</li>
+                                    <li class="select__option">Вариант 1</li>
+                                    <li class="select__option">Вариант 2</li>
+                                    <li class="select__option">Вариант 3</li>
+                                    <li class="select__option">Вариант 4</li>
+                                    <li class="select__option">Вариант 5</li>
+                                </ul>    
+                            </li>    
+                        </ul>
+                </div>
+                <div class="select select__inner">
+                    <p class="select__title">Способ погрузки</p>
+                        <ul>
+                            <li class="select__dropdown select__dropdown_black">
+                                <a href="#" data-toggle="dropdown">Задняя<i class="arrow"></i></a>  
+                            </li>    
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Блок 3 - Груз -->
+        <div class="toggle toggle__inner toggle__inner_small">
+            <input type="checkbox" class="toggle__checkbox" id="cargo" checked></input>
+            <label for="cargo" class="toggle__label"><span>3</span>Груз</label>
+            <div class="toggle__content toggle__content_select">
+                    <!-- Тип груза -->
+                    <div class="select select__inner select__inner_type select__inner_type_big">
+                    <p class="select__title">Тип груза</p>
+                        <ul>
+                            <li class="select__dropdown">
+                                <a href="#" data-toggle="dropdown"><span class="select__value" name="cargo">Не выбран</span><i class="arrow arrow_type"></i></a>
+                            </li>    
+                        </ul>
+                    </div>
+                    <!-- Класс опасности -->
+                    <div class="select select__inner select__inner_type select__inner_type_mr select_hidden">
+                        <p class="select__title">Класс опасности</p>
+                            <ul>
+                                <li class="select__dropdown select__dropdown_black">
+                                    <a href="#" data-toggle="dropdown">Класс 5 — Окисляющие вещества и органические перекиси<i class="arrow"></i></a>  
+                                </li>    
+                            </ul>
+                    </div>
+                    <!-- Объявленная ценность -->
+                    <div class="select select__inner select__inner_type">
+                        <p class="select__title">Объявленная ценность, ₽</p>
+                            <ul>
+                                <li class="select__dropdown">
+                                    <a href="#" data-toggle="dropdown"><span class="select__value" name="valuation">&#8805 1</span><i class="arrow"></i></a>  
+                                </li>    
+                            </ul>
+                    </div>
+                    <div class="select__break"></div>
+                    <!-- Температурный режим -->
+                    <div class="toggle toggle__inner toggle__inner_temp">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="toggle__checkbox checkbox__icon" id="temp">
+                                    <i class="checkbox__checkmark"></i>
+                                    <p class="checkbox__title">Требуется температурный режим</p>
+                                    <div class="toggle__content toggle__content_select">
+                                        <div class="select select__inner select__inner_type_mr">
+                                            <p class="select__title">От, С</p>
+                                                <ul>
+                                                    <li class="select__dropdown select__dropdown_black">
+                                                        <a href="#" data-toggle="dropdown"><span class="select__value select__value_black" name="temp">-20</span></a>
+                                                    </li>    
+                                                </ul>
+                                        </div>
+                                        <div class="select select__inner">
+                                            <p class="select__title">До, С</p>
+                                                <ul>
+                                                    <li class="select__dropdown select__dropdown_black">
+                                                        <a href="#" data-toggle="dropdown"><span class="select__value select__value_black">+23</span></a>  
+                                                    </li>    
+                                                </ul>
+                                        </div>
+                                    </div>
+                                </label>
+                    </div>
+            </div>
+        </div>
+        <!-- Блок 4 - Время -->
+        <div class="toggle toggle__inner toggle__inner_time">
+            <input type="checkbox" class="toggle__checkbox" id="time" checked></input>
+            <label for="time" class="toggle__label"><span>4</span>Время</label>
+            <div class="toggle__content">
+               <div class="toggle__title">
+                    <label class="toggle__content-label">Когда прибыть на точку</label>
+                    <label class="toggle__content-label">700 км в день</label>
+               </div>
+                <div class="timeContent timeContent__inner">
+                    <label class="checkbox checkbox__inner checkbox_circle checkbox_input">
+                        <input type="checkbox" class="checkbox__icon" checked>
+                        <span class="checkbox__checkmark checkbox__checkmark_circle"></span>
+                    </label>
+                    <div class="timeContent__input text"><input type="text" class="input input_big input_dark input_address text" name="address1" value="Длинный адрес с градиентом"></div>
+                    <ul>
+                        <li class="timeContent__time timeContent__time_checked">
+                            <a href="#" data-toggle="dropdown">Не выбрано</a>  
+                        </li>    
+                    </ul>
+                </div>
+                <div class="timeContent timeContent__inner">
+                    <label class="checkbox checkbox__inner checkbox_circle checkbox_input">
+                        <input type="checkbox" class="checkbox__icon">
+                        <span class="checkbox__checkmark checkbox__checkmark_circle"></span>
+                    </label>
+                    <div class="timeContent__input text"><input type="text" class="input input_big input_dark input_address text" name="address2" value="Адрес не указан"></div>
+                    <ul>
+                        <li class="timeContent__time">
+                            <a href="#" data-toggle="dropdown">Не выбрано</a>  
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Комментарий к заказу -->
+        <div class="comment comment__inner">
+            <label class="comment__title">Комментарий к заказу</label>
+            <textarea type="text" name="comment" class="comment__text text">Укажите особенности въезда на территорию склада или подъезда к адресу</textarea>
+        </div>
+        <!-- Информация для заполнения -->
+        <div class="info text">
+            Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+        </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>

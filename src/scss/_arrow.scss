@@ -1,0 +1,18 @@
+.arrow {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-top: 2.2px solid black;
+    border-right: 2.2px solid black;
+    background-color: #fff;
+    transform: rotate(135deg);
+    position: absolute;
+    left: 89%;
+    bottom: 45%;
+    cursor: pointer;
+    z-index: 1;
+    
+    &_type {
+        left: 95%;
+    }
+}
