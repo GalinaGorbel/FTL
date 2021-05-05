@@ -354,10 +354,10 @@ label[for="temp"] {
   border: none;
   outline: none;
   background-color: #fff;
-  color: #CFCFCF;
+  color: black;
   padding: 13px 14px 31px;
   height: 80px;
-  overflow: hidden; }
+  overflow: auto; }
 
 .info {
   height: 102px;
