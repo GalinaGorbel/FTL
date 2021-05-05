@@ -2,15 +2,15 @@ import './scss/base.scss'
 
 "use strict";
 
-let arrows = document.querySelectorAll('.select__dropdown');
+let selects = document.querySelectorAll('.select__dropdown');
 
-for (let arrow of arrows) {
-    arrow.addEventListener('click', (e) => {
+for (let select of selects) {
+    select.addEventListener('click', (e) => {
 
         e.preventDefault();
 
-        const selectBlock = arrow.querySelector('.select__block'),
-            selectValue = arrow.querySelector('.select__value');
+        const selectBlock = select.querySelector('.select__block'),
+            selectValue = select.querySelector('.select__value');
 
         if (selectBlock) {
             selectBlock.classList.toggle('select__block_hidden');

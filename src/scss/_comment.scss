@@ -1,8 +1,10 @@
 .comment {
+    
     &__inner {
         display: flex;
         flex-flow: column;
         margin-bottom: 40px;
+        
     }
     
     &__title {
@@ -17,5 +19,6 @@
         color: #CFCFCF;
         padding: 13px 14px 31px;
         height: 80px;
+        overflow:  hidden;
     }
 }

@@ -235,7 +235,7 @@ label[for="temp"] {
   .select__inner {
     overflow: visible; }
     .select__inner_type_big {
-      flex: 0 0 50%;
+      flex: 0 0 48%;
       margin-right: 12px; }
   .arrow_type {
     left: 89%; }
@@ -352,7 +352,8 @@ label[for="temp"] {
   background-color: #fff;
   color: #CFCFCF;
   padding: 13px 14px 31px;
-  height: 80px; }
+  height: 80px;
+  overflow: hidden; }
 
 .info {
   height: 102px;
