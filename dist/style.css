@@ -126,7 +126,8 @@ label[for="temp"] {
       flex: 1 0 100%; }
 
 .select__title {
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  line-height: 11px; }
 
 .select__value {
   color: #CFCFCF;
