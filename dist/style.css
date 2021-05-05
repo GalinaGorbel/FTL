@@ -67,7 +67,7 @@ h1 {
       text-align: center;
       margin-right: 8px;
       background-color: #EF483E;
-      line-height: 24px; }
+      line-height: 25px; }
 
 .toggle__checkbox:checked ~ .toggle__content {
   position: relative;
@@ -272,12 +272,12 @@ label[for="temp"] {
   text-align: center;
   border-radius: 2px;
   background-color: #717174;
-  height: 24px; }
+  height: 24px;
+  padding: 4px 0; }
   .timeContent__time a {
     display: inline-block;
     text-decoration: none;
     background-color: #717174;
-    margin-top: 5px;
     letter-spacing: 0.05em;
     opacity: 0.3;
     font-weight: normal; }
