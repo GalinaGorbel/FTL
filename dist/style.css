@@ -236,7 +236,8 @@ label[for="temp"] {
   .select__inner {
     overflow: visible; }
     .select__inner_type_big {
-      flex: 0 0 48%;
+      flex: 0 0 48%; }
+    .select__inner_type_mr {
       margin-right: 10px; }
   .arrow_type {
     left: 89%; }
@@ -273,7 +274,7 @@ label[for="temp"] {
   border-radius: 2px;
   background-color: #717174;
   height: 24px;
-  padding: 4px 0; }
+  padding-top: 5px; }
   .timeContent__time a {
     display: inline-block;
     text-decoration: none;
