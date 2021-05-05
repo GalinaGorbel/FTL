@@ -281,7 +281,8 @@ label[for="temp"] {
     background-color: #717174;
     letter-spacing: 0.05em;
     opacity: 0.3;
-    font-weight: normal; }
+    font-weight: normal;
+    line-height: 18px; }
   .timeContent__time_checked a {
     opacity: 1; }
 
