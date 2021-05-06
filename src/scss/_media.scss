@@ -36,6 +36,9 @@
      }
 }
 @media (max-width: 576px) {
+    .select__title {
+        font-size: 12.5px;
+    }
     .toggle__inner_small {
         min-width: 100%;
      }
